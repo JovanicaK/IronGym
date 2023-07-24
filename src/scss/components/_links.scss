@@ -1,0 +1,31 @@
+a {
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.nav-link {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    @include text(21px,24px,700);
+    font-family: $secondary-font;
+    text-transform: uppercase;
+}
+
+// .learn-link {
+//     display: inline-block;
+//     text-decoration: none;
+//     @include text(16px,29px,400);
+//     color: $peach;
+//     margin-bottom: 65px;
+//     &:hover {
+//         color: $rose-bud;
+//     }
+//     @include breakpoints(tablet) {
+//         margin-bottom: 0;
+//     }
+//     @include breakpoints(phone) {
+//         margin-bottom: 0;
+//     }
+// }

@@ -1,0 +1,22 @@
+button {
+    &:hover,
+    &:focus {
+        opacity: 0.7;
+    }
+}
+
+// .toggle {
+//     width: 44px;
+//     height: 44px;
+//     border: none;
+//     background-color: transparent;
+//     @include centerFlex();
+// }
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include text(21px,24px,700);
+    font-family: $secondary-font;
+}

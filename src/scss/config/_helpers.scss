@@ -1,0 +1,105 @@
+/* helpers */
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+// .overlay {
+//     position: relative;
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: $white;
+//         opacity: 0.3;
+//     }
+// }
+
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include breakpoints(phone) {
+        display: block;
+    }
+}
+
+$width: (
+    "55": 55%,
+    "50": 50%,
+    "53": 53.33%,
+    "46": 46.66%,
+    "45": 45%,
+    "33": 33.33%);
+@each $item,$i in $width {
+    .col-#{$item} {
+        flex: 1 1 $i;
+        max-width: $i;
+        @include breakpoints(phone) {
+            @include noFlex();
+        }
+    }
+}
+
+.opacity {
+    opacity: 0.3;
+}
+
+// .col-50 {
+//     flex: 1 1 50%;
+//     max-width: 50%;
+//     @include breakpoints(phone) {
+//         @include noFlex();
+//     }
+// }
+
+// .col-53 {
+//     flex: 1 1 53.33%;
+//     max-width: 53.33%;
+//     @include breakpoints(phone) {
+//         @include noFlex();
+//     }
+// }
+
+// .col-46 {
+//     flex: 1 1 46.66%;
+//     max-width: 46.66%;
+//     @include breakpoints(phone) {
+//         @include noFlex();
+//     }
+// }
+
+// .col-33 {
+//     flex: 1 1 33.33%;
+//     max-width: 33.33%;
+//     @include breakpoints(phone) {
+//         @include noFlex();
+//     }
+// }
+
+// .col-45 {
+//     flex: 1 1 45%;
+//     max-width: 45%;
+//     @include breakpoints(phone) {
+//         @include noFlex();
+//     }
+// }
+
+// .col-55 {
+//     flex: 1 1 55%;
+//     max-width: 55%;
+//     @include breakpoints(phone) {
+//         @include noFlex();
+//     }
+// }

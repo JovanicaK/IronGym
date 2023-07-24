@@ -1,0 +1,62 @@
+
+h1, 
+.h1 {
+    @include text(122px,136px,700);
+    font-family: $secondary-font;
+    text-transform: capitalize;
+    // @include breakpoints(tablet) {
+    //     font-size: 60px;
+    //     line-height: 70px;
+    // } 
+    // @include breakpoints(phone) {
+    //     font-size: 72px;
+    //     line-height: 82px;
+    // }
+}
+
+h2 {
+    @include text(60px,66px,300);
+    font-family: $secondary-font;
+    margin-top: 65px;
+    @include breakpoints(tablet) {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    @include text(36px,43px,700);
+    font-family: $secondary-font;
+    text-transform: capitalize;
+    @include breakpoints(phone) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+h4 {
+    @include text(18px,22px,300);
+    font-family: $secondary-font;
+
+}
+
+p {
+    @include text(16px,24px,300);; 
+    // @include breakpoints(tablet) {
+    //     font-size: 20px;
+    //     line-height: 30px;
+    // }
+}
+
+.small-text {
+    @include text(16px,26px,400);
+}
+
+.extra-small-text {
+    @include text(14px,22.4px,400);
+}
+
+small {
+    @include text(12.8px,20.5px,400);
+    color: $white;
+}

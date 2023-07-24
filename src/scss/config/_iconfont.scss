@@ -3,8 +3,8 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.woff2?1688465027394') format('woff2'),
-		url('../fonts/iconfont.woff?1688465027394') format('woff');
+	src: url('../fonts/iconfont.woff2?1689678681589') format('woff2'),
+		url('../fonts/iconfont.woff?1689678681589') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -29,10 +29,3 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-car::before {
-	content: '\ea01';
-}
-
-.icon-facebook::before {
-	content: '\ea02';
-}
