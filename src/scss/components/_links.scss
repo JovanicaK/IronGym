@@ -1,8 +1,8 @@
-a {
-    &:hover {
-        opacity: 0.7;
-    }
-}
+// a {
+//     &:hover {
+//         opacity: 0.7;
+//     }
+// }
 
 .nav-link {
     display: block;
@@ -11,6 +11,14 @@ a {
     @include text(21px,24px,700);
     font-family: $secondary-font;
     text-transform: uppercase;
+    color: $white;
+    &:hover {
+        color: $red;
+    }
+}
+
+.nav-link--active {
+    color: $red;
 }
 
 // .learn-link {

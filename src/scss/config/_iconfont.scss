@@ -3,8 +3,8 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.woff2?1689678681589') format('woff2'),
-		url('../fonts/iconfont.woff?1689678681589') format('woff');
+	src: url('../fonts/iconfont.woff2?1690279173016') format('woff2'),
+		url('../fonts/iconfont.woff?1690279173016') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,6 +17,7 @@ iconfont Webfont
 	line-height: 1;
 	font-weight: normal;
 	font-style: normal;
+	speak: none;
 	text-decoration: inherit;
 	font-size: inherit;
 	text-transform: none;
@@ -29,3 +30,6 @@ iconfont Webfont
 Glyphs list
 */
 
+.icon-list::before {
+	content: '\ea01';
+}

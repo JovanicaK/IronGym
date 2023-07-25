@@ -5,13 +5,13 @@ button {
     }
 }
 
-// .toggle {
-//     width: 44px;
-//     height: 44px;
-//     border: none;
-//     background-color: transparent;
-//     @include centerFlex();
-// }
+.toggle {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    @include centerFlex();
+}
 
 .btn {
     display: inline-block;
@@ -19,4 +19,17 @@ button {
     text-transform: uppercase;
     @include text(21px,24px,700);
     font-family: $secondary-font;
+}
+
+.nav-btn {
+    padding: 16px 40px;
+    background-color: $red;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $red;
+    }
+    @include breakpoints(phone) {
+        display: none;
+    }
 }
