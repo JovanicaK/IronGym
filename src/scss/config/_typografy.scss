@@ -3,7 +3,7 @@ h1,
 .h1 {
     @include text(122px,136px,700);
     font-family: $secondary-font;
-    text-transform: capitalize;
+    text-transform: uppercase;
     @include breakpoints(tablet) {
         font-size: 80px;
         line-height: 90px;
@@ -15,29 +15,33 @@ h1,
 }
 
 h2 {
-    @include text(60px,66px,300);
+    @include text(91px,96px,700);
     font-family: $secondary-font;
-    margin-top: 65px;
+    text-transform: uppercase;
     @include breakpoints(tablet) {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 70px;
+        line-height: 80px;
+    }
+    @include breakpoints(phone) {
+        font-size: 50px;
+        line-height: 60px;
     }
 }
 
 h3 {
-    @include text(36px,43px,700);
+    @include text(38px,48px,700);
     font-family: $secondary-font;
-    text-transform: capitalize;
-    @include breakpoints(phone) {
-        font-size: 24px;
-        line-height: 29px;
-    }
+    text-transform: uppercase;
+    // @include breakpoints(phone) {
+    //     font-size: 24px;
+    //     line-height: 29px;
+    // }
 }
 
 h4 {
-    @include text(18px,22px,300);
+    @include text(28px,32px,700);
     font-family: $secondary-font;
-
+    text-transform: uppercase; 
 }
 
 p {

@@ -1,0 +1,61 @@
+.services {
+    padding: 68px 0 52px;
+    background-color: $grey;
+    color: $white;
+    .row {
+        margin: 0 -20px;
+    }
+}
+
+.services__title-holder {
+    @include centerFlex();
+    flex-direction: column;
+}
+
+.services__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services__text {
+    margin-bottom: 60px;
+    max-width: 573px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    @include breakpoints(phone) {
+        margin-bottom: 40px;
+    }
+}
+
+.services__card {
+    padding: 20px;
+}
+
+.services__card-inner {
+    padding: 22px 40px;
+    border: 1px solid $red;
+    @include breakpoints(tablet) {
+        padding: 22px 30px;
+    }
+    @include breakpoints(phone) {
+        padding: 22px;
+    }
+}
+
+.services__card-number {
+    display: block;
+    @include text(38px,48px,700);
+    font-family: $secondary-font;
+    margin-bottom: 25px;
+    @include breakpoints(phone) {
+        margin-bottom: 15px;
+    }
+}
+
+.services__card-title{
+    color: $red;
+}
+
+.services__card-text {
+    letter-spacing: -0.1px;
+}
