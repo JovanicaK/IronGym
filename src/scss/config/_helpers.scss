@@ -2,23 +2,29 @@
 .wrapper {
     width: 100%;
     max-width: 1440px;
-    padding: 0 20px;
+    padding: 0 98px;
     margin: 0 auto;
+    @include breakpoints(tablet) {
+        padding: 0 40px;
+    }
+    @include breakpoints(phone) {
+        padding: 0 20px;
+    }
 }
 
-// .overlay {
-//     position: relative;
-//     &::after {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         background-color: $white;
-//         opacity: 0.3;
-//     }
-// }
+.overlay {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        opacity: 0.5;
+    }
+}
 
 .bg {
     background-position: center;

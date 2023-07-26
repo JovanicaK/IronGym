@@ -1,0 +1,76 @@
+.banner {
+    padding: 202px 0 208px;
+    margin-top: -88px;
+    overflow: hidden;
+    @include breakpoints(tablet) {
+        margin-top: -112px;
+    }
+    @include breakpoints(phone) {
+        padding: 135px 0 82px;
+        margin-top: -76px;
+    }
+}
+
+.banner__content {
+    max-width: 660px;
+    position: relative;
+    z-index: 2;
+    @include breakpoints(phone) {
+        max-width: 100%;
+    }
+}
+
+.banner__title {
+    color: $white;
+    margin-bottom: 4px;
+}
+
+.banner__text {
+    color: $white;
+    margin-bottom: 54px;
+}
+
+.banner__numbers {
+    margin-top: 82px;
+}
+
+.banner__number {
+    display: inline-block;
+    padding-right: 38px;
+    border-right: 1px solid $mercury;
+    text-align: center;
+    @include breakpoints(phone) {
+        display: block;
+        border-right: none;
+        padding-right: 0;
+        text-align: left;
+    }
+}
+
+.banner__number--central {
+    padding-left: 38px;
+    @include breakpoints(phone) {
+        padding-left: 0;
+    }
+}
+
+.banner__number--last {
+    padding-left: 38px;
+    padding-right: 0;
+    border-right: none;
+    @include breakpoints(phone) {
+        padding-left: 0;
+    }
+}
+
+.banner__number--red {
+    display: block;
+    color: $red;
+    @include text(50px,56px,700);
+    font-family: $secondary-font;
+    text-transform: uppercase;
+}
+
+.banner__number--white {
+    color: $white;
+}

@@ -29,7 +29,17 @@ button {
         background-color: $white;
         color: $red;
     }
+    @include breakpoints(tablet) {
+        padding: 16px;
+    }
     @include breakpoints(phone) {
         display: none;
     }
+}
+
+.section-btn {
+    padding: 24px 40px;
+    background-color: transparent;
+    color: $red;
+    border: 1px solid $red;
 }
