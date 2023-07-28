@@ -32,7 +32,7 @@
 }
 
 .services__card-inner {
-    padding: 22px 40px;
+    padding: 22px 42px 22px 40px;
     border: 1px solid $red;
     @include breakpoints(tablet) {
         padding: 22px 30px;
@@ -54,8 +54,4 @@
 
 .services__card-title{
     color: $red;
-}
-
-.services__card-text {
-    letter-spacing: -0.1px;
 }

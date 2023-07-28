@@ -1,0 +1,102 @@
+.about-us {
+    position: relative;
+    padding: 110px 0;
+    .wrapper {
+        position: relative;
+        z-index: 2;
+    }
+    @include breakpoints(phone) {
+        padding: 68px 0 50px;
+    }
+}
+
+.about-us__title {
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.about-us__text {
+    color: $white;
+    margin-bottom: 25px;
+    padding-right: 20px;
+}
+
+.about-us__btn {
+    margin-top: 28px;
+}
+
+.about-us__layer-container {
+    position: relative;
+    @include breakpoints(phone) {
+        padding: 106px 0;
+    }
+}
+
+.layer-1,
+.layer-2,
+.layer-3 {
+    // width: 384px;
+    width: 61.72%;
+    height: 496px;
+    // height: 89.2%;
+    @include breakpoints(phone) {
+        height: 350px;
+    }
+}
+
+.layer-1 {
+    border: 1px solid $red;
+    position: relative;
+    top: -57px;
+    left: 171px;
+    @include breakpoints(tablet) {
+        top: -30px;
+        left: 70px;
+    }
+    @include breakpoints(phone) {
+        top: -53px;
+        left: 0;
+    }
+}
+
+.layer-2 {
+    border: 1px solid $silver;
+    position: absolute;
+    top: 64px;
+    right: -54px;
+    z-index: 3;
+    @include breakpoints(tablet) {
+        top: 40px;
+        right: 0;
+    }
+    @include breakpoints(phone) {
+        top: 170px;
+        right: 0;
+    }
+}
+
+.layer-3 {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    z-index: 4;
+    @include breakpoints(tablet) {
+        right: 30px;
+    }
+    @include breakpoints(phone) {
+        @include center;
+        right: auto;
+    }
+}
+
+.layer-3__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
