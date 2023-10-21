@@ -27,7 +27,6 @@ function js() {
 
     return src(source)
         .pipe(changed(source))
-        .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(rename({
             extname: '.min.js'

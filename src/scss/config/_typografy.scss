@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    @include text(38px,48px,700);
+    @include text(38px,54px,700);
     font-family: $secondary-font;
     text-transform: uppercase;
     // @include breakpoints(phone) {
