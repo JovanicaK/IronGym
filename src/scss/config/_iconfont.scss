@@ -3,8 +3,8 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.woff2?1690553098952') format('woff2'),
-		url('../fonts/iconfont.woff?1690553098952') format('woff');
+	src: url('../fonts/iconfont.woff2?1698490726682') format('woff2'),
+		url('../fonts/iconfont.woff?1698490726682') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -30,10 +30,18 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-list::before {
+.icon-left::before {
 	content: '\ea01';
 }
 
-.icon-stars::before {
+.icon-list::before {
 	content: '\ea02';
+}
+
+.icon-right::before {
+	content: '\ea03';
+}
+
+.icon-stars::before {
+	content: '\ea04';
 }

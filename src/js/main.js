@@ -42,15 +42,31 @@ function swiperTrainers() {
       768: {
         slidesPerView: 1,
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      1200: {
+        slidesPerView: 2,
       },
     },
   }
-  var swiper = new Swiper('.js-swiper', config);
+  var swiper = new Swiper('.js-swiperTrainers', config);
+}
+
+function swiperTestimonials() {
+  var config = {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  }
+  var swiper = new Swiper('.js-swiperTestimonials', config);
 }
 
 navigation();
 swiperTrainers();
+swiperTestimonials();
+
 

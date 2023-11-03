@@ -12,10 +12,18 @@
 }
 
 .trainers__slider {
-    position: relative;
     padding: 20px 0;
+    overflow: hidden; 
     .swiper-wrapper {
         padding-bottom: 50px;
+    }
+    .swiper-pagination {
+        left: 50%;
+        transform: translate(-50%);
+        overflow: visible;
+    }
+    .swiper-slide {
+        @include centerFlex();
     }
 }
 
